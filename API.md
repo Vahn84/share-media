@@ -57,8 +57,9 @@ static async sharePopoutMediaToSome(url, title = "", loop = false, mute = true)
  * @param {boolean} [immersive=false] immersive mode
  * @param {boolean} [loop=false] loop the video (only for videos)
  * @param {boolean} [mute=true] mute the video (only for videos)
+ * @param {boolean} [isNpc=false] set the right container for the image
  */
-static async shareFullscreenMediaToAll(url, title = "", immersive = false, loop = false, mute = true)
+static async shareFullscreenMediaToAll(url, title = "", immersive = false, loop = false, mute = true, isNpc = false)
 ```
 
 ```javascript
@@ -69,8 +70,9 @@ static async shareFullscreenMediaToAll(url, title = "", immersive = false, loop 
  * @param {boolean} [immersive=false] immersive mode
  * @param {boolean} [loop=false] loop the video (only for videos)
  * @param {boolean} [mute=true] mute the video (only for videos)
+ * @param {boolean} [isNpc=false] set the right container for the image
  */
-static async shareFullscreenMediaToSome(url, title = "", immersive = false, loop = false, mute = true)
+static async shareFullscreenMediaToSome(url, title = "", immersive = false, loop = false, mute = true, isNpc = false)
 ```
 
 ## Scene

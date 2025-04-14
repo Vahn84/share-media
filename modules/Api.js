@@ -58,12 +58,13 @@ export default class Api {
     title = "",
     immersive = false,
     loop = false,
-    mute = true
+    mute = true,
+    isNpc = false
   ) {
     this._validate(url, loop, mute);
 
     const type = [".mp4", "webm"].includes(url.slice(-4).toLowerCase()) ? "video" : "image";
-    await shareFullscreenMedia(url, "all", type, title, immersive, loop, mute);
+    await shareFullscreenMedia(url, "all", type, title, immersive, loop, mute, isNpc);
   }
 
   /**
@@ -84,7 +85,7 @@ export default class Api {
     this._validate(url, loop, mute);
 
     const type = [".mp4", "webm"].includes(url.slice(-4).toLowerCase()) ? "video" : "image";
-    await shareFullscreenMedia(url, "some", type, title, immersive, loop, mute);
+    await shareFullscreenMedia(url, "some", type, title, immersive, loop, mute, isNpc);
   }
 
   /**

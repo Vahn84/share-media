@@ -224,8 +224,21 @@
   background-position: center;
   -webkit-filter: blur(8px);
   filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+}
+#fullscreen-layer .npc {
+  z-index: 3;
+  position: fixed;
+  left: 20%;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 10%;
+  height: 50%;
+}
+#fullscreen-layer .npc.hidden {
+  display: none;
 }
 #fullscreen-layer img,
 #fullscreen-layer video {

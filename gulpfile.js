@@ -43,7 +43,7 @@ function compileJs() {
   return gulp
     .src(["modules/main.js"])
     .pipe(named())
-    .pipe(webpack({ mode: "production" }, compiler))
+    .pipe(webpack({ mode: "development" }, compiler))
     .pipe(gulp.dest("./build"));
 }
 const js = gulp.series(compileJs);

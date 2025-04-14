@@ -112,6 +112,22 @@
     backdrop-filter: blur(8px);
   }
 
+  .npc {
+    z-index: 3;
+    position: fixed;
+    left: 20%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 10%;
+    height: 50%;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
   img,
   video {
     z-index: 2;
